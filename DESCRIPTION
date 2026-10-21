@@ -1,0 +1,33 @@
+Package: DetectOutlier
+Type: Package
+Title: Detect Outliers in Data Frames and Export Results
+Version: 0.1.1
+Authors@R: c(person("Prakash","Kumar",role=c("aut","cre"),email="prakash289111@gmail.com"),
+             person(c("Himadri","Sekhar"),"Roy",role="aut"),
+             person(c("Ranjit","Kumar"),"Paul",role="aut"),
+             person("Md.","Yeasin",role="aut"),
+             person(c("Paritosh","Kumar"),"ICAR-NIASM",role="aut"),
+             person(c("Amrit","Kumar"),"Paul",role="aut"))
+Maintainer: Prakash Kumar <prakash289111@gmail.com>
+Description: Identifies potential outliers in numeric columns of a data frame
+    using the interquartile range (IQR), defined as the difference between
+    the third and first quartiles. Values below the first quartile minus
+    1.5 times the IQR or above the third quartile plus 1.5 times the IQR are
+    flagged as potential outliers. The package can export rows containing
+    outliers to comma-separated values (CSV) files and create 'Excel'
+    workbooks with outlier values highlighted and a summary of outlier counts.
+Depends: R (>= 4.0)
+Imports: openxlsx
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-10-13 04:36:59 UTC; iasri
+Author: Prakash Kumar [aut, cre],
+  Himadri Sekhar Roy [aut],
+  Ranjit Kumar Paul [aut],
+  Md. Yeasin [aut],
+  Paritosh Kumar ICAR-NIASM [aut],
+  Amrit Kumar Paul [aut]
+Repository: CRAN
+Date/Publication: 2026-10-21 17:30:09 UTC
